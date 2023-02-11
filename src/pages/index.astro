@@ -1,19 +1,74 @@
 ---
+import BaseLayout from '../layouts/BaseLayout.astro';
+const pageTitle = 'Home Page';
+import Greeting from '../components/Greeting.jsx';
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
-  </head>
-  <body>
-    <a href="/">Home</a>
-    <a href="/about/">About</a>
-    <a href="/blog/">blog</a>
-    <h1>Astro</h1>
-    <h1>Astro My Site</h1>
-  </body>
-</html>
+<BaseLayout pageTitle={pageTitle}>
+  <h2>My awesome blog subtitle</h2>
+  <!-- ページの読み込み時にJavascriptをクライアントに送信 -->
+  <Greeting client:load messages={['Hi', 'Hello', 'Howdy', 'Hey there']} />
+  <h2>aaaaaaaaaaaaa</h2>
+  <h2>aaaaaaaaaaaaa</h2>
+  <h2>aaaaaaaaaaaaa</h2>
+  <h2>aaaaaaaaaaaaa</h2>
+  <h2>aaaaaaaaaaaaa</h2>
+  <h2>aaaaaaaaaaaaa</h2>
+  <h2>aaaaaaaaaaaaa</h2>
+  <h2>aaaaaaaaaaaaa</h2>
+  <h2>aaaaaaaaaaaaa</h2>
+  <h2>aaaaaaaaaaaaa</h2>
+  <h2>aaaaaaaaaaaaa</h2>
+  <h2>aaaaaaaaaaaaa</h2>
+  <h2>aaaaaaaaaaaaa</h2>
+  <h2>aaaaaaaaaaaaa</h2>
+  <h2>aaaaaaaaaaaaa</h2>
+  <h2>aaaaaaaaaaaaa</h2>
+  <h2>aaaaaaaaaaaaa</h2>
+  <h2>aaaaaaaaaaaaa</h2>
+  <h2>aaaaaaaaaaaaa</h2>
+  <h2>aaaaaaaaaaaaa</h2>
+  <h2>aaaaaaaaaaaaa</h2>
+  <h2>aaaaaaaaaaaaa</h2>
+  <h2>aaaaaaaaaaaaa</h2>
+  <h2>aaaaaaaaaaaaa</h2>
+  <h2>aaaaaaaaaaaaa</h2>
+  <h2>aaaaaaaaaaaaa</h2>
+  <h2>aaaaaaaaaaaaa</h2>
+  <h2>aaaaaaaaaaaaa</h2>
+  <h2>aaaaaaaaaaaaa</h2>
+  <h2>aaaaaaaaaaaaa</h2>
+  <h2>aaaaaaaaaaaaa</h2>
+  <h2>aaaaaaaaaaaaa</h2>
+  <h2>aaaaaaaaaaaaa</h2>
+  <h2>aaaaaaaaaaaaa</h2>
+  <h2>aaaaaaaaaaaaa</h2>
+  <h2>aaaaaaaaaaaaa</h2>
+  <h2>aaaaaaaaaaaaa</h2>
+  <h2>aaaaaaaaaaaaa</h2>
+  <h2>aaaaaaaaaaaaa</h2>
+  <h2>aaaaaaaaaaaaa</h2>
+  <h2>aaaaaaaaaaaaa</h2>
+  <h2>aaaaaaaaaaaaa</h2>
+  <h2>aaaaaaaaaaaaa</h2>
+  <h2>aaaaaaaaaaaaa</h2>
+  <h2>aaaaaaaaaaaaa</h2>
+  <h2>aaaaaaaaaaaaa</h2>
+  <h2>aaaaaaaaaaaaa</h2>
+  <h2>aaaaaaaaaaaaa</h2>
+  <h2>aaaaaaaaaaaaa</h2>
+  <h2>aaaaaaaaaaaaa</h2>
+  <h2>aaaaaaaaaaaaa</h2>
+  <h2>aaaaaaaaaaaaa</h2>
+  <h2>aaaaaaaaaaaaa</h2>
+  <h2>aaaaaaaaaaaaa</h2>
+  <h2>aaaaaaaaaaaaa</h2>
+  <h2>aaaaaaaaaaaaa</h2>
+  <h2>aaaaaaaaaaaaa</h2>
+  <h2>aaaaaaaaaaaaa</h2>
+  <h2>aaaaaaaaaaaaa</h2>
+  <h2>aaaaaaaaaaaaa</h2>
+  <h2>aaaaaaaaaaaaa</h2>
+  <h2>aaaaaaaaaaaaa</h2>
+  <Greeting client:visible messages={['Hi', 'Hello', 'Howdy', 'Hey there']} />
+</BaseLayout>
