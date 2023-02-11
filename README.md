@@ -10,6 +10,9 @@ npm create astro@latest -- --template minimal
 > 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
 ## 🚀 Project Structure
+Host
+https://scintillating-twilight-0973e4.netlify.app/
+
 
 Inside of your Astro project, you'll see the following folders and files:
 
